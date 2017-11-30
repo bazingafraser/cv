@@ -5,8 +5,8 @@
 PHP7 安装
 
 1、编译安装php
-[root@10-6-22-7 package]# tar -zxvf php-7.0.6.tar.gz
-[root@10-6-22-7 php-7.0.6]# cd php-7.0.6
+[root@10-6-22-7 package]# tar -zxvf php-7.0.6.tar.gz\
+[root@10-6-22-7 php-7.0.6]# cd php-7.0.6\
 [root@10-6-22-7 php-7.0.6]# ./configure \
 --prefix=/usr/local/php7 \
 --with-curl \
@@ -43,27 +43,27 @@ PHP7 安装
 --enable-maintainer-zts \
 --enable-opcache \
 --with-curl
-[root@10-6-22-7 php-7.0.6]# make ZEND_EXTRA_LIBS='-liconv'
-[root@10-6-22-7 php-7.0.6]# make install
+[root@10-6-22-7 php-7.0.6]# make ZEND_EXTRA_LIBS='-liconv'\
+[root@10-6-22-7 php-7.0.6]# make install\
 
-2、创建php配置文件
-[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini
+2、创建php配置文件\
+[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini\
 
-3、编辑php-fpm配置文件
-[root@10-6-22-7 etc]# vi /usr/local/php7/etc/php-fpm.conf
-写入内容：
-[global]
-pid = /usr/local/php7/php-fpm.pid
-error_log = /data/weblogs/php-fpm-error.log
-log_level = notice
-emergency_restart_threshold = 10
-emergency_restart_interval = 1m
-process_control_timeout = 5s
-daemonize = yes
-[www]
-listen = 127.0.0.1:9000
-listen.backlog = -1
-listen.allowed_clients = 127.0.0.1
+3、编辑php-fpm配置文件\
+[root@10-6-22-7 etc]# vi /usr/local/php7/etc/php-fpm.conf\
+写入内容：\
+[global]\
+pid = /usr/local/php7/php-fpm.pid\
+error_log = /data/weblogs/php-fpm-error.log\
+log_level = notice\
+emergency_restart_threshold = 10\
+emergency_restart_interval = 1m\
+process_control_timeout = 5s\
+daemonize = yes\
+[www]\
+listen = 127.0.0.1:9000\
+listen.backlog = -1\
+listen.allowed_clients = 127.0.0.1\
 user = www
 group = www
 listen.mode=0666
