@@ -42,7 +42,7 @@ PHP7 安装
 --without-pear \
 --enable-maintainer-zts \
 --enable-opcache \
---with-curl
+--with-curl\
 [root@10-6-22-7 php-7.0.6]# make ZEND_EXTRA_LIBS='-liconv'\
 [root@10-6-22-7 php-7.0.6]# make install
 
