@@ -44,10 +44,10 @@ PHP7 安装
 --enable-opcache \
 --with-curl
 [root@10-6-22-7 php-7.0.6]# make ZEND_EXTRA_LIBS='-liconv'\
-[root@10-6-22-7 php-7.0.6]# make install\
+[root@10-6-22-7 php-7.0.6]# make install
 
 2、创建php配置文件\
-[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini \
+[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini
 
 3、编辑php-fpm配置文件\
 [root@10-6-22-7 etc]# vi /usr/local/php7/etc/php-fpm.conf\
@@ -86,7 +86,7 @@ env[PATH] = /usr/local/bin:/usr/bin:/bin\
 env[TMP] = /tmp\
 env[TMPDIR] = /tmp\
 env[TEMP] = /tmp\
-php_flag[display_errors] = off\
+php_flag[display_errors] = off
 
 2、编译phpredis 模块\
 [root@10-6-22-7 package]# wget https://github.com/phpredis/phpredis/archive/php7.zip\
@@ -97,7 +97,7 @@ php_flag[display_errors] = off\
 [root@10-6-22-7 phpredis-php7]# make && make install\
 [root@10-6-22-7 phpredis-php7]# vi /usr/local/php7/etc/php.ini\
 在扩展中增加一行\
-extension=redis.so\
+extension=redis.so
 
 
 Swoole 升级\
@@ -112,7 +112,7 @@ Swoole 升级\
 输入：extension=swoole.so\
 保存退出即可\
 [root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# /usr/local/php7/bin/php -m | grep 'swoole'\
-运行上面的命令  检查是否成功加载swoole.so\
+运行上面的命令  检查是否成功加载swoole.so
 
 
 
