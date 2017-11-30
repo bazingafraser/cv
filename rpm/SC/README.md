@@ -4,7 +4,7 @@
 
 PHP7 安装
 
-1、编译安装php
+1、编译安装php\
 [root@10-6-22-7 package]# tar -zxvf php-7.0.6.tar.gz\
 [root@10-6-22-7 php-7.0.6]# cd php-7.0.6\
 [root@10-6-22-7 php-7.0.6]# ./configure \
