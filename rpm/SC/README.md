@@ -47,7 +47,7 @@ PHP7 安装
 [root@10-6-22-7 php-7.0.6]# make install\
 
 2、创建php配置文件\
-[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini\
+[root@10-6-22-7 php-7.0.6]# cp -f php.ini-production /usr/local/php7/etc/php.ini \
 
 3、编辑php-fpm配置文件\
 [root@10-6-22-7 etc]# vi /usr/local/php7/etc/php-fpm.conf\
@@ -64,55 +64,55 @@ daemonize = yes\
 listen = 127.0.0.1:9000\
 listen.backlog = -1\
 listen.allowed_clients = 127.0.0.1\
-user = www
-group = www
-listen.mode=0666
-pm = dynamic
-pm.max_children = 64
-pm.start_servers = 5
-pm.min_spare_servers = 5
-pm.max_spare_servers = 15
-pm.max_requests = 1024
-request_terminate_timeout = 0s
-request_slowlog_timeout = 0s
-slowlog = /data/weblogs/php-fpm-slow.log
-rlimit_files = 65535
-rlimit_core = 0
-chroot =
-chdir =
-catch_workers_output = yes
-env[HOSTNAME] = 10-6-22-7
-env[PATH] = /usr/local/bin:/usr/bin:/bin
-env[TMP] = /tmp
-env[TMPDIR] = /tmp
-env[TEMP] = /tmp
-php_flag[display_errors] = off
+user = www\
+group = www\
+listen.mode=0666\
+pm = dynamic\
+pm.max_children = 64\
+pm.start_servers = 5\
+pm.min_spare_servers = 5\
+pm.max_spare_servers = 15\
+pm.max_requests = 1024\
+request_terminate_timeout = 0s\
+request_slowlog_timeout = 0s\
+slowlog = /data/weblogs/php-fpm-slow.log\
+rlimit_files = 65535\
+rlimit_core = 0\
+chroot =\
+chdir =\
+catch_workers_output = yes\
+env[HOSTNAME] = 10-6-22-7\
+env[PATH] = /usr/local/bin:/usr/bin:/bin\
+env[TMP] = /tmp\
+env[TMPDIR] = /tmp\
+env[TEMP] = /tmp\
+php_flag[display_errors] = off\
 
-2、编译phpredis 模块
-[root@10-6-22-7 package]# wget https://github.com/phpredis/phpredis/archive/php7.zip
-[root@10-6-22-7 package]# unzip php7.zip
-[root@10-6-22-7 package]# cd phpredis-php7
-[root@10-6-22-7 phpredis-php7]# /usr/local/php7/bin/phpize
-[root@10-6-22-7 phpredis-php7]# ./configure --with-php-config=/usr/local/php7/bin/php-config
-[root@10-6-22-7 phpredis-php7]# make && make install
-[root@10-6-22-7 phpredis-php7]# vi /usr/local/php7/etc/php.ini
-在扩展中增加一行
-extension=redis.so
+2、编译phpredis 模块\
+[root@10-6-22-7 package]# wget https://github.com/phpredis/phpredis/archive/php7.zip\
+[root@10-6-22-7 package]# unzip php7.zip\
+[root@10-6-22-7 package]# cd phpredis-php7\
+[root@10-6-22-7 phpredis-php7]# /usr/local/php7/bin/phpize\
+[root@10-6-22-7 phpredis-php7]# ./configure --with-php-config=/usr/local/php7/bin/php-config\
+[root@10-6-22-7 phpredis-php7]# make && make install\
+[root@10-6-22-7 phpredis-php7]# vi /usr/local/php7/etc/php.ini\
+在扩展中增加一行\
+extension=redis.so\
 
 
-Swoole 升级
-[root@10-6-22-7 package]# wget 'https://github.com/swoole/swoole-src/archive/swoole-1.8.5-stable.tar.gz'
-[root@10-6-22-7 package]# tar -zxvf ./swoole-1.8.5-stable.tar.gz
-[root@10-6-22-7 package]# cd swoole-src-swoole-1.8.5-stable
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# /usr/local/php7/bin/phpize
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# ./configure --with-php-config=/usr/local/php7/bin/php-config
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# make
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# make install
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# vi /usr/local/php7/etc/php.ini
-输入：extension=swoole.so
-保存退出即可
-[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# /usr/local/php7/bin/php -m | grep 'swoole'
-运行上面的命令  检查是否成功加载swoole.so
+Swoole 升级\
+[root@10-6-22-7 package]# wget 'https://github.com/swoole/swoole-src/archive/swoole-1.8.5-stable.tar.gz'\
+[root@10-6-22-7 package]# tar -zxvf ./swoole-1.8.5-stable.tar.gz\
+[root@10-6-22-7 package]# cd swoole-src-swoole-1.8.5-stable\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# /usr/local/php7/bin/phpize\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# ./configure --with-php-config=/usr/local/php7/bin/php-config\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# make\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# make install\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# vi /usr/local/php7/etc/php.ini\
+输入：extension=swoole.so\
+保存退出即可\
+[root@10-6-22-7 swoole-src-swoole-1.8.5-stable]# /usr/local/php7/bin/php -m | grep 'swoole'\
+运行上面的命令  检查是否成功加载swoole.so\
 
 
 
