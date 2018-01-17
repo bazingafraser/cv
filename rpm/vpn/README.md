@@ -10,7 +10,7 @@ chmod +x Linux_shadowsocks.sh
     
 ./Linux_shadowsocks.sh 2>&1 | tee shadowsocks.log
 
-
+客户端下载：https://github.com/j-proxy/iossos
 
 该脚本解释权归bazingafraser所有，转载请注明出处：https://github.com/bazingafraser/cv/tree/master/rpm/vpn
 
