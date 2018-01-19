@@ -7,21 +7,20 @@ linux服务器端搭建：\
 chmod +x Linux_shadowsocks.sh\
 ./Linux_shadowsocks.sh 2>&1 | tee shadowsocks.log\
 客户端下载：\
-全部客户端下载路径：http://help.fyvps.com/index.php/archives/51/\
+全部客户端下载路径：http://help.fyvps.com/index.php/archives/51/
 安卓客户端：\
-
-IOS客户端：\
-
+https://raw.githubusercontent.com/bazingafraser/cv/master/rpm/vpn/shadowsocks-android.apk\
+IOS、ipad客户端：\
+https://github.com/j-proxy/iossos\
 windows客户端：\
-
+https://raw.githubusercontent.com/bazingafraser/cv/master/rpm/vpn/Shadowsocks.exe\
 mac客户端：\
-
+https://raw.githubusercontent.com/bazingafraser/cv/master/rpm/vpn/ShadowsocksX-NG.zip\
 
 
 
 搭建方式二:\
 
-iphone、ipad的Shadowrocket客户端下载：https://github.com/j-proxy/iossos\
 
 注意：该脚本解释权归bazingafraser所有，转载请注明出处：https://github.com/bazingafraser/cv/tree/master/rpm/vpn\
 本人博客：http://www.bazingafraser.cn
