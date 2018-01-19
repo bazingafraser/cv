@@ -54,7 +54,8 @@ https://raw.githubusercontent.com/bazingafraser/cv/master/rpm/vpn/finalspeed-mac
 本地端口和我们上面在ss客户端使用的本地端口需要一致为9090\
 9、配置完成之后点击fs客户端的显示日志查看是否连接成功，也可以使用浏览器访问谷歌是否可以使用\
 参考配置链接:\
-http://www.vspeed.org/?fs\
+http://www.vspeed.org/?fs
+
 注意：该脚本解释权归bazingafraser所有，转载请注明出处：https://github.com/bazingafraser/cv/tree/master/rpm/vpn
 
 站点：https://bazingafraser@github.com/bazingafraser/cv.git
