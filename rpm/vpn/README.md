@@ -56,7 +56,8 @@ https://raw.githubusercontent.com/bazingafraser/cv/master/rpm/vpn/finalspeed-mac
 参考配置链接:\
 http://www.vspeed.org/?fs
 
-注意：该脚本解释权归bazingafraser所有，转载请注明出处：https://github.com/bazingafraser/cv/tree/master/rpm/vpn
+注意：该脚本解释权归bazingafraser所有，转载请注明出处：\
+https://github.com/bazingafraser/cv/tree/master/rpm/vpn
 
 站点：https://bazingafraser@github.com/bazingafraser/cv.git
 
