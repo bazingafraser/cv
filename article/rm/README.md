@@ -26,7 +26,7 @@ PATH=/usr/local/bin:/bin:/usr/bin:$PATH
 
 [root@i-ekowjial safe-rm-0.12]# vim /etc/safe-rm.conf
 
-将禁止删除的目录写入改文件，每个目录一行
+将禁止删除的目录写入该文件，每个目录一行
 
 /\
 /boot\
