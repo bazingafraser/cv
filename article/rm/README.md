@@ -28,9 +28,9 @@ PATH=/usr/local/bin:/bin:/usr/bin:$PATH
 
 将禁止删除的目录写入改文件，每个目录一行
 
-/
-/boot
-/sbin
+/\
+/boot\
+/sbin\
 /data/ccc
 
 保存退出即可
