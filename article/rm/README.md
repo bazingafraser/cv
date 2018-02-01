@@ -3,7 +3,7 @@
 
 # Time：2018-02-01
 
-# Editor：bazingafraser
+# Editor：Bazinga
 
 
 1、下载源码安装包
@@ -56,7 +56,7 @@ safe-rm: skipping ccc/
 
 # Func: 安全：rm的替换方法（回收站的建立）
 # Time: 2018/2/1
-# editor: bazingafraser
+# Editor: Bazinga
 1、将下面脚本添加到某个目录下（例如/data/shell下)\
 脚本名称：rm-remove.sh\
 脚本内容：\
