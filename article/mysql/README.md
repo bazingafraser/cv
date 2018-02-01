@@ -1,6 +1,7 @@
 # Func : Mysql基本操作
-
-#Mysql中数据导出到excel文件语句\
+================================\
+#Mysql中数据导出到excel文件语句||\
+================================\
 方法一：\
 select * from table into outfile ’d:test.xls’;\
 方法二：\
