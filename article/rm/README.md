@@ -127,7 +127,12 @@ rm ./cc\
 [root@i-ekowjial 1517462127]#\
 7、综上：我们做了以上限制之后，删除的东西会mv到这个回收站目录下并且会以unix时间为目录
 
-注意：该脚本解释权归bazingafraser所有，转载请注明出处：\
-https://github.com/bazingafraser/cv/tree/master/article/rm\
-站点：https://bazingafraser@github.com/bazingafraser/cv.git\
+
+注意：该脚本解释权归bazingafraser所有，转载请注明出处：
+
+https://github.com/bazingafraser/cv/tree/master/article/rm
+
+站点：https://bazingafraser@github.com/bazingafraser/cv.git
+
 本人博客：http://www.bazingafraser.cn
+
