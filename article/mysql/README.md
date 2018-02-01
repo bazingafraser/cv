@@ -11,7 +11,7 @@ echo "select * from table;"| /usr/local/mysql/bin/mysql -hlocalhost -uroot -pxxx
 如果导出的xls文件中出现乱码\
 1、点击文件右击打开方式使用记事本打开\
 2、在打开的记事本点击左上角 文件-->另存为\
-3、文件名称自定义为test.xls，保存类型选择所有文件（*.*），编码选择UTF-8\
+3、文件名称自定义为test.xls，保存类型选择所有文件\*.\*，编码选择UTF-8\
 4、使用excel打开另存的文件查看内容已经显示正常
 
 
