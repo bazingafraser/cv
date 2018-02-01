@@ -1,7 +1,6 @@
-操作说明：
-
-为了防止在linux下执行操作的时候误操作rm -rf /,或者rm -rf 一些比较重要的目录，我们做以下操作来限制rm的删除
-
+#Func:安全：为了防止在linux下执行操作的时候误操作rm -rf /,或者rm -rf 一些比较重要的目录，我们做以下操作来限制rm的删除
+#Time：2018-02-01
+#Editor：bazingafraser
 1、下载源码安装包
 
 https://raw.githubusercontent.com/bazingafraser/cv/master/article/rm/safe-rm-0.12.tar.gz
@@ -50,15 +49,13 @@ safe-rm: skipping ccc/
 [root@i-ekowjial data]#
 
 
+# Func: 安全：rm的替换方法（回收站的建立）
+# Time: 2018/2/1
+# editor: bazingafraser
 1、将下面脚本添加到某个目录下（例如/data/shell下)\
 脚本名称：rm-remove.sh\
 脚本内容：\
 #!/usr/bin/env bash\
-# func: 安全：rm的替换方法\
-# Time: 2018/2/1\
-# editor: yw\
-# --------------------
-
 PARA_CNT=$#\
 TRASH_DIR="/data/backup/.zc_trash"\
 DATE=`date +%F`\
