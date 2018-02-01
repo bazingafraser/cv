@@ -55,7 +55,7 @@ safe-rm: skipping ccc/
 
 
 # Func: 安全：rm的替换方法（回收站的建立）
-# Time: 2018/2/1
+# Time: 2018-02-01
 # Editor: Bazinga
 1、将下面脚本添加到某个目录下（例如/data/shell下)\
 脚本名称：rm-remove.sh\
@@ -126,3 +126,8 @@ rm /\
 rm ./cc\
 [root@i-ekowjial 1517462127]#\
 7、综上：我们做了以上限制之后，删除的东西会mv到这个回收站目录下并且会以unix时间为目录
+
+注意：该脚本解释权归bazingafraser所有，转载请注明出处：\
+https://github.com/bazingafraser/cv/tree/master/article/rm\
+站点：https://bazingafraser@github.com/bazingafraser/cv.git\
+本人博客：http://www.bazingafraser.cn
