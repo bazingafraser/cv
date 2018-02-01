@@ -1,6 +1,11 @@
-#Func:安全：为了防止在linux下执行操作的时候误操作rm -rf /,或者rm -rf 一些比较重要的目录，我们做以下操作来限制rm的删除
-#Time：2018-02-01
-#Editor：bazingafraser
+
+# Func：安全：为了防止在linux下执行操作的时候误操作rm -rf /,或者rm -rf 一些比较重要的目录，我们做以下操作来限制rm的删除
+
+# Time：2018-02-01
+
+# Editor：bazingafraser
+
+
 1、下载源码安装包
 
 https://raw.githubusercontent.com/bazingafraser/cv/master/article/rm/safe-rm-0.12.tar.gz
