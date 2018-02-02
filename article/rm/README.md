@@ -62,7 +62,7 @@ safe-rm: skipping ccc/
 脚本内容：\
 #!/usr/bin/env bash\
 PARA_CNT=$#\
-TRASH_DIR="/data/backup/.zc_trash"\
+TRASH_DIR="/data/backup/trash"\
 DATE=`date +%F`\
 TRASH_DIR_D=${TRASH_DIR}/${DATE}\
 if [ ! -d ${TRASH_DIR_D} ] ;then\
@@ -82,7 +82,7 @@ do\
 
 done\
 2、创建回收站目录\
-[root@i-ekowjial shell]# mkdir /data/backup/.zc_trash\
+[root@i-ekowjial shell]# mkdir /data/backup/trash\
 3、添加环境变量\
 [root@i-ekowjial shell]# vim ~/.bashrc\
 在alias的最后一行添加脚本执行方式\
