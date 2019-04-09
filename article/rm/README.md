@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/bazingafraser/cv/master/article/rm/safe-rm-0.1
 
 最后一行添加：
 
-PATH=/usr/local/bin:/bin:/usr/bin:$PATH
+export PATH=/usr/local/bin:/bin:/usr/bin:$PATH
 
 [root@localhost safe-rm-0.12]# source /etc/profile    环境变量生效
 
